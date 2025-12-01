@@ -14,7 +14,7 @@ Develop multiple classification models—including Logistic Regression, SVM, MLP
 Apply LIME to interpret model predictions and highlight important regions of the X-ray images, providing medical professionals with insights into the model’s decision-making process.
 
 ## Data Source
-[Kaggle Covid-19 Image Dataset](https://www.kaggle.com/pranavraikokte/covid19-image-dataset) 
+[Kaggle Covid-19 Image Dataset](https://www.kaggle.com/pranavraikokte/covid19-image-dataset)  
 Sample Data:  
 ![image](https://github.com/hanshenghuang/XRayImageClassificationProject/blob/main/XRay_Sample.png)  
 
