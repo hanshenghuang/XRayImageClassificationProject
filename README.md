@@ -1,6 +1,6 @@
 # COVID-19 Detection from Chest X-Ray Images Using AI Models
 
-## Backgroundd
+## Background
 Since COVID-19 emerged, it has caused over three million deaths worldwide, making outbreak control an urgent priority for governments and public health experts. Most countries rely on testing and isolating confirmed cases to prevent large-scale transmission.  
 However, RT-PCR—the standard diagnostic test—is costly, time-consuming, and requires specialized personnel. Using AI models to detect COVID-19 could provide faster, accurate results while reducing manpower needs, enabling quicker identification and isolation of infected individuals and helping prevent widespread outbreaks.
 
