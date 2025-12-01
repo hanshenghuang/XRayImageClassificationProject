@@ -1,12 +1,26 @@
-## X-Ray Image Classification Project
-Topic: COVID-19 Detection from Chest X-Ray Images Using AI Models  
-Description: Identified COVID-19 cases from X-Ray images and interpreted the neural networks by LIME and Grad-Cam  
+# COVID-19 Detection from Chest X-Ray Images Using AI Models
 
-Report: "[利用AI模型判讀肺部X光圖片以偵測新冠肺炎](https://github.com/Tim-HanSheng-Huang/XRayImageClassificationProject/blob/main/XRayImageClassification_Report.pdf)"  
-Data Source: "[Kaggle Covid-19 Image Dataset](https://www.kaggle.com/pranavraikokte/covid19-image-dataset)"  
+## Backgroundd
+Since COVID-19 emerged, it has caused over three million deaths worldwide, making outbreak control an urgent priority for governments and public health experts. Most countries rely on testing and isolating confirmed cases to prevent large-scale transmission.  
+However, RT-PCR—the standard diagnostic test—is costly, time-consuming, and requires specialized personnel. Using AI models to detect COVID-19 could provide faster, accurate results while reducing manpower needs, enabling quicker identification and isolation of infected individuals and helping prevent widespread outbreaks.
+
+## Research Framework
+Since COVID-19 primarily affects lung function, examining a person’s lung condition may help determine whether they are infected. Building on previous research, this report aims to use an AI model to analyze chest X-ray images and identify whether an individual has COVID-19.  
+### 1. Preprocess
+Clean and preprocess chest X-ray data, apply data augmentation, and use transfer learning techniques to address the limited dataset.
+### 2. Build & Classify
+Develop multiple classification models—including Logistic Regression, SVM, MLP, CNN, and VGG—to determine whether an individual is infected with COVID-19 based on chest X-ray images.
+### 3. Interpret
+Apply LIME to interpret model predictions and highlight important regions of the X-ray images, providing medical professionals with insights into the model’s decision-making process.
+
+## Data Source
+[Kaggle Covid-19 Image Dataset](https://www.kaggle.com/pranavraikokte/covid19-image-dataset) 
 Sample Data:  
-![image](https://github.com/Tim-HanSheng-Huang/XRayImageClassificationProject/blob/main/XRay_Sample.png)  
-Outcome: 
+![image](https://github.com/hanshenghuang/XRayImageClassificationProject/blob/main/XRay_Sample.png)  
+
+## Outcome 
+Detailed Report: [COVID-19 Detection from Chest X-Ray Images Using AI Models](https://github.com/hanshenghuang/XRayImageClassificationProject/blob/main/covid19_detection_from_chest_xray_images_using_ai_models.pdf)
+
 <table>
    <tr>
       <td></td>
@@ -162,3 +176,10 @@ Outcome:
       <td>0.89</td>
    </tr>
 </table>
+
+## Conclusion
+* Using our trained VGG model, we can predict infection status with high accuracy and identify which specific lung regions are most important to the model, thereby improving its credibility.
+* By increasing the number of images through rotation, scaling, and other augmentation techniques, we effectively enhance model accuracy.
+* The COVID-19 cases in the dataset may mostly consist of patients with severe symptoms, which is why abnormalities in the lungs appear more pronounced.
+* Machine learning requires large datasets for effective training and validation. Collecting more clinical data in the future would further improve the model’s accuracy and reliability.
+* Through explainable AI, we observed that areas near the heart and spine in X-ray images are particularly important. Understanding these key regions increases model trustworthiness and may assist medical professionals in diagnosis and treatment.
